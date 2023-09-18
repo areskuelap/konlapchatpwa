@@ -319,7 +319,7 @@ const [news, setNews] = useState(false);
          name="prompt"
          className={`flex-grow w-9/12 ${formData.prompt ? 'text-gray-700' : ''} outline-none font-semibold py-2`} placeholder={idioma === "es" ? "Empieza a buscar..." : "Start typing to search..."}
       />
-      <div onClick={getData} className="w-1/6 flex justify-center">
+      <div className="w-1/6 flex justify-center">
       <button type="submit">
          <PaperAirplaneIcon className={`w-7 h-7 cursor-pointer ${formData.prompt ? 'text-blue-700' : 'text-blue-300'}`} />
       </button>
