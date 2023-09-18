@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { XIcon } from '@heroicons/react/solid';
+import { XIcon, ArrowCircleLeftIcon } from '@heroicons/react/solid';
 
 const isLocalStorageSupported = () => {
   try {
@@ -289,7 +289,7 @@ return (
       <div className="bg-gray-50 w-full fixed bottom-0 z-20 px-4 mt-6 sm:mt-0 py-3 sm:px-6 sm:flex sm:flex-row-reverse">
             <div className="grid py-4 grid-cols-5 items-center">
                 <div className="flex justify-center text-sm items-center cursor-pointer hover:bg-gray-200 p-2 rounded">
-                <XIcon onClick={open} className="w-6 text-blue-700"/>
+                <ArrowCircleLeftIcon onClick={open} className="w-6 text-blue-700"/>
                 </div>
                 <div onClick={showWeb} className={`flex justify-center text-sm cursor-pointer ${web? "text-blue-700 bg-gray-100" : "text-gray-700 " } p-2 rounded`}>
                     <p className="font-semibold">Web</p>

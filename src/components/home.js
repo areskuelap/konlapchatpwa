@@ -246,8 +246,8 @@ const [news, setNews] = useState(false);
                                 <div>
                                 {payload.map((item, index) =>
                                           index % 2 === 0 ? (
-<div id="prompt" className="flex justify-end mr-5 ml-20">
-    <div className="my-5 bg-gray-100 py-3 px-4 rounded-t-3xl rounded-bl-3xl relative">
+<div id="prompt" className={`flex justify-end mr-5 ml-20`}>
+    <div className={`my-5 bg-gray-100 py-3 px-4 rounded-t-3xl rounded-bl-3xl relative`}>
         <p className="text-blue-500 font-semibold">{item.line}</p>
         <div className="absolute bottom-0 right-0 flex flex-col items-center transform translate-y-1/2">
             <ArrowCircleDownIcon onClick={() => setFormData({ ...formData, prompt: item.line })} className="w-5 hover:text-yellow-400 h-auto text-yellow-500"/>
@@ -277,7 +277,7 @@ const [news, setNews] = useState(false);
                             </div>
                     }
                     {loading?   
-                <div className="flex justify-start mb-72 ml-5 mr-20 pb-8"><LoadingIcon className="w-6 pb-8" /></div>
+                <div className="flex justify-start mb-72 ml-5 mr-20 pb-44"><LoadingIcon className="w-6 pb-8" /></div>
                 :
                 <></>
             }
@@ -319,7 +319,7 @@ const [news, setNews] = useState(false);
          name="prompt"
          className={`flex-grow w-9/12 ${formData.prompt ? 'text-gray-700' : ''} outline-none font-semibold py-2`} placeholder={idioma === "es" ? "Empieza a buscar..." : "Start typing to search..."}
       />
-      <div className="w-1/6 flex justify-center">
+      <div onClick={getData} className="w-1/6 flex justify-center">
       <button type="submit">
          <PaperAirplaneIcon className={`w-7 h-7 cursor-pointer ${formData.prompt ? 'text-blue-700' : 'text-blue-300'}`} />
       </button>
