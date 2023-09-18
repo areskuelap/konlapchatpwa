@@ -3,7 +3,7 @@
   "background_color": "#ffffff",
   "display": "fullscreen",
   "scope": "/",
-  "start_url": "index.html?fullscreen=true",
+  "start_url": "index.html",
   "name": "Konlap",
   "short_name": "Konlap",
   "description": "Konlap es un motor de búsqueda que te permite encontrar información en diferentes idiomas y generar respuestas usando inteligencia artificial",
